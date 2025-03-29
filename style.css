@@ -1,0 +1,58 @@
+/* Reset tampilan */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(120deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 20px;
+}
+
+/* Container utama */
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Tombol kejutan */
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #ff5733;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #c70039;
+}
+
+/* Kotak kejutan */
+#surprise-box {
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Efek teks kejutan */
+.final-text {
+  opacity: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFD700;
+  text-shadow: 0 0 10px #FFA500;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Animasi muncul */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
